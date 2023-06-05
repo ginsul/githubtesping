@@ -15,7 +15,7 @@ jobs:
 
       - name: install
         run: |
-             curl https://github.com/sjlleo/nexttrace/raw/main/nt_install.sh)" -o /tmp/nt_install.sh
+             curl https://github.com/sjlleo/nexttrace/raw/main/nt_install.sh -o /tmp/nt_install.sh
              chmod +x /tmp/nt_install.sh
              bash /tmp/nt_install.sh
 
