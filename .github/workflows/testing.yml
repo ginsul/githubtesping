@@ -1,0 +1,14 @@
+name: Hourly Housekeeping
+on:
+  workflow_dispatch:
+
+jobs:
+  pinger_job:
+    name: A job to ping
+    runs-on: ubuntu-latest
+    env:
+      URL: 1.1.1.1
+      METHOD: GET  # the method used to make the request. It is GET by default
+    steps:
+      - id: ping
+        uses: sisodiya2421/pinger@master
