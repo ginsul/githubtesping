@@ -14,7 +14,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y traceroute iputils-ping
 
       - name: Run traceroute
-        run: traceroute 8.8.8.8
+        run: traceroute github.com
 
       - name: Run ping
-        run: ping -c 5 8.8.8.8
+        run: ping -c 5 github.com
