@@ -17,4 +17,4 @@ jobs:
         run: traceroute github.com
 
       - name: Run ping
-        run: ping -c 5 github.com
+        run: curl -m 10 --retry 5 1.1.1.1
