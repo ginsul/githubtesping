@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: ping
-        run: traceroute 103.6.117.3
+        run: traceroute ${{ SECRET_BARU }}
