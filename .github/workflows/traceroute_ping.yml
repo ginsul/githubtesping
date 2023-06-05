@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: ping
-        run: traceroute ${{ secrets.SECRET_URL }}
+        run: traceroute 103.6.117.3
