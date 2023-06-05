@@ -8,16 +8,4 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install traceroute and ping
-        run: sudo apt-get update && sudo apt-get install -y curl sudo
-
-      - name: install
-        run: |
-             curl -Ls https://github.com/sjlleo/nexttrace/raw/main/nt_install.sh -o /tmp/nt_install.sh
-             sudo chmod +x /tmp/nt_install.sh
-             sudo bash /tmp/nt_install.sh
-
-      - name: Run ping
-        run: sudo nexttrace 1.1.1.1
+        uses: ginsul/githubtesping@master
