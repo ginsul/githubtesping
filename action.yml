@@ -1,0 +1,4 @@
+name: 'scheduled ping'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
