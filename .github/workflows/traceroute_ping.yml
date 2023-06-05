@@ -8,4 +8,4 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: ginsul/githubtesping@master
+        uses: ginsul/githubtesping@main
