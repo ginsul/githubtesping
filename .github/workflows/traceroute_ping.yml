@@ -4,8 +4,11 @@ on:
 
 jobs:
   traceroute_ping:
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
 
     steps:
       - name: Checkout code
-        uses: ginsul/githubtesping@main
+        uses: actions/checkout@v2
+
+      - name: ping
+        run: ping 1.1.1.1
