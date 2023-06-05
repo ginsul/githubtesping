@@ -14,7 +14,10 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y traceroute iputils-ping
 
       - name: Run traceroute
-        run: traceroute github.com
+        run: traceroute google.com
 
       - name: Run ping
-        run: curl -m 10 --retry 5 1.1.1.1
+        run: ping -4 -n 5 google.com
+
+      - name: check ip public
+        run: curl ifconfig.me
