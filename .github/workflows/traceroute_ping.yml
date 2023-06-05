@@ -13,4 +13,4 @@ jobs:
       - name: ping
         env:
          INI: ${{ secrets.SECRET_BARU }}
-        run: traceroute ${{ INI }}
+        run: traceroute ${ INI }
