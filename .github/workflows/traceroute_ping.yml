@@ -20,4 +20,4 @@ jobs:
              sudo bash /tmp/nt_install.sh
 
       - name: Run ping
-        run: nexttrace 1.1.1.1
+        run: sudo nexttrace 1.1.1.1
