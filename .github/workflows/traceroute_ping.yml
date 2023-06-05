@@ -11,13 +11,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install traceroute and ping
-        run: sudo apt-get update && sudo apt-get install -y traceroute iputils-ping
+        run: sudo apt-get update && sudo apt-get install -y curl
 
-      - name: Run traceroute
-        run: traceroute google.com
+      - name: install
+        run: bash -c "$(curl -Ls https://github.com/sjlleo/nexttrace/raw/main/nt_install.sh)"
 
       - name: Run ping
-        run: ping -4 -n 5 google.com
-
-      - name: check ip public
-        run: curl ifconfig.me
+        run: nexttrace 1.1.1.1
