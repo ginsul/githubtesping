@@ -12,6 +12,9 @@ jobs:
 
       - name: curl1
         run: curl ifconfig.me
+
+      - name: traceroute1
+        run: traceroute 103.6.117.62
         
       - name: ping
         run: ping -c 300 103.6.117.62
