@@ -14,10 +14,10 @@ jobs:
         run: curl ifconfig.me
         
       - name: ping
-        run: ping -c 300 103.6.117.30
+        run: ping -c 300 103.6.117.62
         
       - name: traceroute
-        run: traceroute 103.6.117.30
+        run: traceroute 103.6.117.62
 
       - name: curl
         run: curl ifconfig.me
